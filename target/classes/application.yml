@@ -1,0 +1,16 @@
+# 容器 配置
+server:
+  port: 8080
+  undertow:
+    worker-threads: 20
+    buffer-size: 512
+    io-threads: 2
+
+# ES
+spring:
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true
+      cluster-nodes: 127.0.0.1:9300
+      cluster-name: lookout-es
